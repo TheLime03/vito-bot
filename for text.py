@@ -1,8 +1,8 @@
-# add loop break
 from random import randint
 import pyautogui
 import webbrowser
 import time
+import keyboard
 
 
 def open_browser():
@@ -45,13 +45,22 @@ def refresh():
     open_browser()
 
 
+def er500():
+    if pyautogui.locateOnScreen('opera.png') != None:
+        refresh()
+        return True
+    return False
+
+
 # pp
 c = 1
 open_browser()
-while True:
-    i = randint(1, 10000000)
+while keyboard.is_pressed("q") == False:
+    i = randint(00000000, 99999999)
     steps()
     c = c+1
+    if er500() == True:
+        c = 1
     if c == 4:
         c = 1
         refresh()
