@@ -1,4 +1,4 @@
-import keyboard
+# add loop break
 import pyautogui
 import webbrowser
 import time
@@ -23,28 +23,14 @@ def open_browser():
     pyautogui.click()
 
     time.sleep(1)
-    xy = pyautogui.locateOnScreen('show.png')
-    pyautogui.moveTo(xy)
-    time.sleep(0.5)
-    pyautogui.click()
+    pyautogui.write(l[i], interval=0.25)
 
     time.sleep(1)
-    xy = pyautogui.locateOnScreen('path.png')
+    xy = pyautogui.locateOnScreen('share.png')
     pyautogui.moveTo(xy)
     time.sleep(0.5)
     pyautogui.click()
-    time.sleep(0.5)
-    f1 = open("memespath.txt", "r")
-    ch = f1.readline()
-
-    pyautogui.keyDown('ctrl')
-    pyautogui.press('a')
-    pyautogui.keyUp('ctrl')
-    pyautogui.press('delete')
-    pyautogui.write(ch, interval=0.1)
-    pyautogui.press('enter')
 
 
 # pp
-while not keyboard.is_pressed('q'):
-    open_browser()
+open_browser()
