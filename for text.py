@@ -36,9 +36,22 @@ def steps():
     pyautogui.click()
 
 
-# pp
+def refresh():
+    xy = pyautogui.locateOnScreen('close.png')
+    pyautogui.moveTo(xy)
+    time.sleep(0.5)
+    pyautogui.click()
+    time.sleep(1)
+    open_browser()
 
+
+# pp
+c = 1
 open_browser()
 while True:
-    i = randint(1, 10000)
+    i = randint(1, 10000000)
     steps()
+    c = c+1
+    if c == 4:
+        c = 1
+        refresh()
