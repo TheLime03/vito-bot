@@ -41,12 +41,10 @@ def open_browser():
     pyautogui.press('a')
     pyautogui.keyUp('ctrl')
     pyautogui.press('delete')
-    pyautogui.write(ch, interval=0.25)
+    pyautogui.write(ch, interval=0.1)
     pyautogui.press('enter')
 
 
 # pp
-while True:
+while not keyboard.is_pressed('q'):
     open_browser()
-    if keyboard.is_pressed('q'):
-        break
