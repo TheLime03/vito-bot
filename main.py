@@ -1,3 +1,4 @@
+import keyboard
 import pyautogui
 import webbrowser
 import time
@@ -33,10 +34,19 @@ def open_browser():
     time.sleep(0.5)
     pyautogui.click()
     time.sleep(0.5)
+    f1 = open("memespath.txt", "r")
+    ch = f1.readline()
+
     pyautogui.keyDown('ctrl')
-    pyautogui.press('v')
+    pyautogui.press('a')
     pyautogui.keyUp('ctrl')
+    pyautogui.press('delete')
+    pyautogui.write(ch, interval=0.25)
+    pyautogui.press('enter')
 
 
 # pp
-open_browser()
+while True:
+    open_browser()
+    if keyboard.is_pressed('q'):
+        break
