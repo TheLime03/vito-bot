@@ -1,3 +1,3 @@
-crimefile = open('txtlist.txt', 'r')
-yourResult = [line.split(',') for line in crimefile.readlines()]
-print(yourResult)
+l = ['A pair of cows were talking in the field One says â€œHave you heard about the mad cow disease thatâ€™s going around\n'], ['Yeah the other cow says. â€œMakes me glad Iâ€™m a penguin\n'], ['Once', ' my father came home and found me in front of a roaring fire. That made my father very mad', ' as we didnâ€™t have a fireplaceVictor Borge\n'], ['Your mother has been with us for 20 years said John.Isnt it time she got a place of her own\n'], [
+    'â€œMy mother? replied Helen. I thought she was your mother\n'], ['Why donâ€™t pirates take a shower before they walk the plank?\n'], ['They just wash up on shore\n'], ['In Denver', ' the members of a SundayÂ\xad-school class were asked to set down their favorite biblical truths. One youngster laboriously printed: â€œDo one to others as others do one to you. â€”Lee Olson', ' The Denver Post\n'], ['Whatâ€™s the best thing about Switzerland?\n'], ['I donâ€™t know', ' but the flag is a big plus.']
+r = len(l)
