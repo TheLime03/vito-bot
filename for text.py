@@ -1,4 +1,5 @@
 # add loop break
+from random import randint
 import pyautogui
 import webbrowser
 import time
@@ -36,8 +37,8 @@ def steps():
 
 
 # pp
-i = 1
+
 open_browser()
 while True:
+    i = randint(1, 10000)
     steps()
-    i = i+1
