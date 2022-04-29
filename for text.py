@@ -10,7 +10,7 @@ def open_browser():
     ch = f.readline()
     webbrowser.open(ch)
     f.close
-    time.sleep(4)
+    time.sleep(5)
 
 
 def steps():
@@ -37,12 +37,11 @@ def steps():
 
 
 def refresh():
-    xy = pyautogui.locateOnScreen('close.png')
+    xy = pyautogui.locateOnScreen('ref.png')
     pyautogui.moveTo(xy)
     time.sleep(0.5)
     pyautogui.click()
-    time.sleep(1)
-    open_browser()
+    time.sleep(2.5)
 
 
 def er500():
@@ -55,7 +54,7 @@ def er500():
 
 
 # pp
-c = 1
+c = 0
 open_browser()
 while keyboard.is_pressed("q") == False:
     i = randint(00000000, 99999999)
