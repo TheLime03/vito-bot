@@ -15,13 +15,19 @@ def open_browser():
 
 def steps():
     time.sleep(1)
-    xy = pyautogui.locateOnScreen('post.png')
+    if pyautogui.locateOnScreen('post.png') != None:
+        xy = pyautogui.locateOnScreen('post.png')
+    else:
+        xy = pyautogui.locateOnScreen('night_post.png')
     pyautogui.moveTo(xy)
     time.sleep(0.5)
     pyautogui.click()
     time.sleep(1)
 
-    xy = pyautogui.locateOnScreen('hap.png')
+    if pyautogui.locateOnScreen('hap.png') != None:
+        xy = pyautogui.locateOnScreen('hap.png')
+    else:
+        xy = pyautogui.locateOnScreen('night_hap.png')
     pyautogui.moveTo(xy)
     time.sleep(0.5)
     pyautogui.click()
@@ -30,7 +36,10 @@ def steps():
     pyautogui.write(str(i), interval=0.25)
     time.sleep(1)
 
-    xy = pyautogui.locateOnScreen('share.png')
+    if pyautogui.locateOnScreen('share.png') != None:
+        xy = pyautogui.locateOnScreen('share.png')
+    else:
+        xy = pyautogui.locateOnScreen('night_share.png')
     pyautogui.moveTo(xy)
     time.sleep(0.5)
     pyautogui.click()
