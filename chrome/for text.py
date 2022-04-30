@@ -57,7 +57,7 @@ def refresh():
 
 def er500():
     time.sleep(1.5)
-    if pyautogui.locateOnScreen('opera.png') != None:
+    if pyautogui.locateOnScreen('err.png') != None:
         refresh()
         return True
     else:
