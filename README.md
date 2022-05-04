@@ -5,8 +5,8 @@ Vito is a Tunisian website pays you 0.02$ per post (besides other activities)
 - 2)close your browser
 - 3)start the .py file
 - you can press "q" to stop the program 
-- this program only optimized for opera GX 
-- this program only work when using the light mode version of the website 
+- ~~this program only optimized for opera GX~~
+- ~~this program only work when using the light mode version of the website~~
 # TBA:
-- [ ] optimize the program for chrome
-- [ ] optimize the program for dark mode
+- [x] optimize the program for chrome
+- [x] optimize the program for dark mode
